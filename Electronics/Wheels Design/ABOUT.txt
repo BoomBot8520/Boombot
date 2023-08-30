@@ -1,0 +1,36 @@
+CIRCUIT :-
+Design for the Motors that will run the Wheels of the robot. Differential Drive System implemented.
+
+
+
+-- 4 motors with similar circuits are connected to 4 different pins on the Arduino board.
+-- Capacitors and Diodes have been used to eliminate unnecessary analog noise in the motor. The diode stops current backflow, and the capacitor filters AC noises.
+-- npn transistor has been used as a switch, and is biased in active region. When base voltage reached threshold, current is allowed to flow to the ground through emitter.
+-- The base of the npn transistor is connected to the Arduino Pin, which emits a PWM (Pulse Width Modulated) signal.
+-- Each motor requires a 9V battery to operate it.
+
+
+
+CONNECTIONS ON PCB :-
+-- Arduino Pin5 is connected to ARDCNT - Pin1
+-- Arduino Pin11 is connected to ARDCNT - Pin2
+-- Arduino Pin3 is connected to ARDCNT - Pin3
+-- Arduino Pin10 is connected to ARDCNT - Pin4
+-- MOTOR1 - Pin1 is connected to +ve terminal of Motor1
+-- MOTOR1 - Pin2 is connected to -ve terminal of Motor1
+-- MOTOR2 - Pin1 is connected to +ve terminal of Motor2
+-- MOTOR2 - Pin2 is connected to -ve terminal of Motor2
+-- MOTOR3 - Pin1 is connected to +ve terminal of Motor3
+-- MOTOR3 - Pin2 is connected to -ve terminal of Motor3
+-- MOTOR4 - Pin1 is connected to +ve terminal of Motor4
+-- MOTOR4 - Pin2 is connected to -ve terminal of Motor4
+-- +V is connected to POWER - Pin2
+-- GND is connected to POWER - Pin1
+
+
+
+** Check README.txt for links to the schematics and designs **
+
+
+
+----------------------------------------------------------------------------------------------------
