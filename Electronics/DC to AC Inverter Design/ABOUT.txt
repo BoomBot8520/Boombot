@@ -1,0 +1,29 @@
+CIRCUIT :-
+DC to AC Inverter Circuit using MOSFET H-Bridge connections
+
+
+
+-- The DC battery voltage is converted into AC via an H-Bridge connection. 4 MOSFETS are used in the circuit - 2 PMOS and 2 NMOS.
+-- The MOSFET gates are supplied voltage via Arduino pins.
+--  The frequency of the AC voltage is determined by adjusting the delay time in turning the MOSFETS on/off.
+-- This circuit converts the DC to a square wave pulse. The square wave is then converted to sinusoidal wave via a low-pass filter.
+-- Due to significant voltage loss in the circuit, it is advisable to attach a transformer at the end of the low-pass filter. It is not shown in this circuit.
+-- The oscilloscope measures the output voltage.
+-- It is a self-working circuit. Once started, it does not need to be manned.
+-- This circuit uses only 4 Arduino Pins, so it can easily be absorbed into another Arduino board to save space.
+
+
+
+CONNECTIONS ON PCB:-
+-- Arduino PIN 10 is connected to ARDCN1-Pin1
+-- Arduino PIN 11 is connected to ARDCN2 - Pin2
+-- Arduino PIN 9 is connected to ARDCN1 - Pin2
+-- Arduino PIN 6 is connected to ARDCN2 - Pin1
+-- Positive +V is connected to POWER - Pin2
+-- Ground is connected to POWER - Pin1
+
+
+
+** Check README.txt for links to the design **
+
+--------------------------------------------------------------------------------------------------
