@@ -1,0 +1,40 @@
+CIRCUIT :-
+Arm and Claw Design Circuit, using DC Motor and Servo Motors
+
+
+
+-- This circuit is used for controlling the arm and claw of the robot, which is responsible for digging out the mine.
+-- The DC Motor is used for spinning the claw at a specified rpm for loosening the soil.
+-- Servo Motor 1 is used for adjusting the height of the claw from the ground.
+-- Servo Motor 2 is used for adjusting the angle of the arm. The double-jointed arm gives the robot much better leverage and control while retrieving the mine.
+-- The DC Motor uses a 9V battery, while both the servos receive power from the Arduino, since servo power should not exceed 6V.
+-- Again, only 3 Arduino pins are needed for the functioning of this circuit. Hence it can easily be integrated into larger Arduino boards with other circuits to save space. However, for clarity purposes, a different Arduino Uno has been used.
+
+
+
+ARDUINO CONNECTIONS ON PCB :-
+-- ARDCNC1 - Pin1 is connected to base of Q1 (npn transistor)
+-- ARDCNC1 - Pin2 is connected to base of Q2 (npn transistor)..... remains empty
+-- ARDCNC2 - Pin1 is connected to Servo 1
+-- ARDCNC2 - Pin2 is connected to Servo 2
+-- ARDCNC2 - Pin3 is connected to buzzer circuit Arduino (for receiving signals on arm motion, used to operate the LED flashing bulb)
+-- POWER1 - Pin1 is connected to +V
+-- POWER1 - Pin2 is connected to GND
+-- MOTOR1 - Pin1 is connected to +ve terminal of DC Motor
+-- MOTOR1 - Pin2 is connected to -ve terminal of DC Motor
+-- POWER2 and MOTOR2 are connections, in case a second motor is required for operation.
+
+
+
+IMPORTANT :-
+-- MOTOR2, POWER2 and ARDCNC1 - Pin2 connections are required only if a second motor is attached. Otherwise, leave disconnected.
+
+
+
+** Check README.txt for links to the schematics and PCBs **
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+
